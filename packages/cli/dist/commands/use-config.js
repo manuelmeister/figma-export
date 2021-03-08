@@ -29,7 +29,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const command_1 = require("@oclif/command");
-const figmaExport = __importStar(require("@figma-export/core"));
+const figmaExport = __importStar(require("@proxy-figma-export/core"));
 const fs = require("fs");
 const path = require("path");
 const ora = require("ora");
