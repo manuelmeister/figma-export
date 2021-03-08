@@ -23,8 +23,8 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^3.2.0",
-        "@figma-export/utils": "^3.0.0",
+        "@figma-export/types": "manuelmeister/figma-export/packages/types",
+        "@figma-export/utils": "manuelmeister/figma-export/packages/utils",
         "make-dir": "~3.1.0",
         "mini-svg-data-uri": "~1.2.3"
     },

@@ -23,7 +23,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^3.2.0"
+        "@figma-export/types": "manuelmeister/figma-export/packages/types"
     },
     "engines": {
         "node": ">= 10.13 <= 14.x"

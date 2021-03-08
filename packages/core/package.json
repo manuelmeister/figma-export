@@ -23,9 +23,10 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^3.2.0",
-        "axios": "~0.19.2",
-        "figma-js": "~1.13.0",
+        "@figma-export/types": "manuelmeister/figma-export/packages/types",
+        "axios": "^0.21.1",
+        "https-proxy-agent": "^5.0.0",
+        "figma-js": "manuelmeister/figma-js",
         "p-limit": "^3.0.2"
     },
     "engines": {

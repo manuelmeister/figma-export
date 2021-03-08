@@ -1,12 +1,19 @@
-import axios from 'axios';
+import axios, {AxiosRequestConfig} from 'axios';
 import * as Figma from 'figma-js';
 import { writeFileSync } from 'fs';
 import { sep } from 'path';
+const HttpsProxyAgent = require("https-proxy-agent");
 
 (async () => {
-    const fetch = async (url: string) => (await axios.get(url, {
+    let config: AxiosRequestConfig = {
         headers: { 'X-FIGMA-TOKEN': process.env.FIGMA_TOKEN },
-    })).data;
+    }
+
+    if (!!process.env.https_proxy) {
+        config.httpsAgent = new HttpsProxyAgent(process.env.https_proxy);
+    }
+
+    const fetch = async (url: string) => (await axios.get(url, config)).data;
 
     const figmaFiles: Figma.FileResponse = await fetch(
         'https://api.figma.com/v1/files/fzYhvQpqwhZDUImRz431Qo',

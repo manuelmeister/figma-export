@@ -10,8 +10,8 @@
   },
   "bugs": "https://github.com/marcomontalbano/figma-export/issues",
   "dependencies": {
-    "@figma-export/core": "^3.2.0",
-    "@figma-export/types": "^3.2.0",
+    "@figma-export/core": "manuelmeister/figma-export/packages/core",
+    "@figma-export/types": "manuelmeister/figma-export/packages/types",
     "@oclif/command": "~1.8.0",
     "@oclif/config": "~1.17.0",
     "@oclif/errors": "~1.3.3",

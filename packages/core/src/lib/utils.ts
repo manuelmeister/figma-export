@@ -1,4 +1,5 @@
-import axios from 'axios';
+import axios, {AxiosRequestConfig} from 'axios';
+const HttpsProxyAgent = require("https-proxy-agent");
 
 const toArray = <T extends unknown>(any: T): T[] => (Array.isArray(any) ? any : [any]);
 
@@ -25,11 +26,18 @@ const fetchAsSvgXml = (url: string): Promise<string> => {
         throw new TypeError('Only absolute URLs are supported');
     }
 
-    return axios.get(url, {
+    let config: AxiosRequestConfig = {
         headers: {
             'Content-Type': 'images/svg+xml',
-        },
-    }).then((response) => {
+        }
+    }
+
+    if (!!process.env.https_proxy) {
+        config.httpsAgent = new HttpsProxyAgent(process.env.https_proxy);
+        config.proxy = false;
+    }
+
+    return axios.get(url, config).then((response) => {
         return response.data;
     }).catch((error: Error) => {
         throw new Error(`while fetching svg "${url}": ${error.message}`);

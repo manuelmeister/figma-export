@@ -24,7 +24,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "^3.2.0",
+        "@figma-export/types": "manuelmeister/figma-export/packages/types",
         "make-dir": "~3.1.0"
     },
     "engines": {
