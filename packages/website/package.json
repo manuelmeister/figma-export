@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@figma-export/website",
+    "name": "@proxy-figma-export/website",
     "version": "3.2.0",
     "description": "Website for @figma-export",
     "author": "Marco Montalbano",
@@ -30,8 +30,8 @@
     "devDependencies": {
         "@babel/core": "~7.11.6",
         "@babel/plugin-transform-react-jsx": "~7.10.4",
-        "@figma-export/cli": "manuelmeister/figma-export/packages/cli",
-        "@figma-export/utils": "manuelmeister/figma-export/packages/utils",
+        "@proxy-figma-export/cli": "^3.2.0",
+        "@proxy-figma-export/utils": "^3.2.0",
         "babel-plugin-jsx-pragmatic": "~1.0.2",
         "npm-run-all": "~4.1.5",
         "parcel-bundler": "~1.12.4",

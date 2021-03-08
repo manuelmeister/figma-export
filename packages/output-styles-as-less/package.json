@@ -1,5 +1,5 @@
 {
-    "name": "@figma-export/output-styles-as-less",
+    "name": "@proxy-figma-export/output-styles-as-less",
     "version": "3.2.0",
     "description": "Outputter for @figma-export that exports styles to LESS",
     "main": "dist/index.js",
@@ -24,7 +24,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "manuelmeister/figma-export/packages/types",
+        "@proxy-figma-export/types": "^3.2.0",
         "make-dir": "~3.1.0"
     },
     "engines": {

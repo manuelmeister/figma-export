@@ -1,5 +1,5 @@
 {
-    "name": "@figma-export/output-components-as-stdout",
+    "name": "@proxy-figma-export/output-components-as-stdout",
     "version": "3.2.0",
     "description": "Outputter for @figma-export that outputs components in console as json",
     "main": "dist/index.js",
@@ -23,7 +23,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "manuelmeister/figma-export/packages/types"
+        "@proxy-figma-export/types": "^3.2.0"
     },
     "engines": {
         "node": ">= 10.13 <= 14.x"

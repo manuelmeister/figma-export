@@ -1,5 +1,5 @@
 {
-    "name": "@figma-export/output-components-as-svgr",
+    "name": "@proxy-figma-export/output-components-as-svgr",
     "version": "3.2.0",
     "description": "Outputter for @figma-export that exports components as React components using svgr",
     "main": "dist/index.js",
@@ -25,8 +25,8 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "manuelmeister/figma-export/packages/types",
-        "@figma-export/utils": "manuelmeister/figma-export/packages/utils",
+        "@proxy-figma-export/types": "^3.2.0",
+        "@proxy-figma-export/utils": "^3.2.0",
         "@svgr/core": "~5.4.0",
         "make-dir": "~3.1.0"
     },

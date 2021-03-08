@@ -1,12 +1,12 @@
 {
-    "name": "@figma-export/core",
+    "name": "@proxy-figma-export/core",
     "version": "3.2.0",
     "description": "@figma-export core functionalities",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/marcomontalbano/figma-exporter.git",
+        "url": "git+https://github.com/manuelmeister/figma-export.git",
         "directory": "packages/core"
     },
     "author": "Marco Montalbano",
@@ -23,7 +23,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "manuelmeister/figma-export/packages/types",
+        "@proxy-figma-export/types": "^3.2.0",
         "axios": "^0.21.1",
         "https-proxy-agent": "^5.0.0",
         "figma-js": "manuelmeister/figma-js",

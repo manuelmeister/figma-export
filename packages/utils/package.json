@@ -1,5 +1,5 @@
 {
-    "name": "@figma-export/utils",
+    "name": "@proxy-figma-export/utils",
     "version": "3.0.0",
     "description": "Utils for @figma-export",
     "main": "dist/index.js",

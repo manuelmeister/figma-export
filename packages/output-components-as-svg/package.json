@@ -1,5 +1,5 @@
 {
-    "name": "@figma-export/output-components-as-svg",
+    "name": "@proxy-figma-export/output-components-as-svg",
     "version": "3.2.0",
     "description": "Outputter for @figma-export that exports components as svg",
     "main": "dist/index.js",
@@ -24,7 +24,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@figma-export/types": "manuelmeister/figma-export/packages/types",
+        "@proxy-figma-export/types": "^3.2.0",
         "make-dir": "~3.1.0"
     },
     "engines": {
