@@ -23,7 +23,7 @@ module.exports = {
         ['styles', {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             outputters: [
-                require('@figma-export/output-styles-as-sass')({
+                require('@proxy-figma-export/output-styles-as-sass')({
                     output: './output'
                 })
             ]
@@ -37,7 +37,7 @@ module.exports = {
 `getExtension` and `getFilename` are **optional**.
 
 ```js
-require('@figma-export/output-styles-as-sass')({
+require('@proxy-figma-export/output-styles-as-sass')({
     output: './output',
     getExtension: () => 'SCSS',
     getFilename: () => '_variables',

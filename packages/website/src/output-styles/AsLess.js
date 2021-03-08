@@ -32,7 +32,7 @@ const props = {
                 ['styles', {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     outputters: [
-                        require('@figma-export/output-styles-as-less')({
+                        require('@proxy-figma-export/output-styles-as-less')({
                             output: './output/less',
                         })
                     ]

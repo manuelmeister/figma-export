@@ -25,7 +25,7 @@ You can use a custom configuration for svgo, creating a `.figmaexportrc.js` file
 
 module.exports = {
   configs: [
-    ['@figma-export/transform-svg-with-svgo', {
+    ['@proxy-figma-export/transform-svg-with-svgo', {
       plugins: [
         { removeViewBox: false },
         { removeDimensions: true }

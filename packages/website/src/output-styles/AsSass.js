@@ -33,10 +33,10 @@ const props = {
                 ['styles', {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     outputters: [
-                        require('@figma-export/output-styles-as-sass')({
+                        require('@proxy-figma-export/output-styles-as-sass')({
                             output: './output/scss',
                         }),
-                        require('@figma-export/output-styles-as-sass')({
+                        require('@proxy-figma-export/output-styles-as-sass')({
                             output: './output/sass',
                             getExtension: () => 'SASS',
                         })

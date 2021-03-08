@@ -28,7 +28,7 @@ const props = {
                 ['styles', {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     outputters: [
-                        require('@figma-export/output-styles-as-css')({
+                        require('@proxy-figma-export/output-styles-as-css')({
                             output: './output/css',
                         })
                     ]

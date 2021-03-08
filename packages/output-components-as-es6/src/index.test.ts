@@ -3,9 +3,9 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
 
-import { camelCase } from '@figma-export/utils';
+import { camelCase } from '@proxy-figma-export/utils';
 
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 
 import * as figmaDocument from '../../core/src/lib/_config.test';
 import * as figma from '../../core/src/lib/figma';

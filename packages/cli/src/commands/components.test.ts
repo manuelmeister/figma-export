@@ -3,7 +3,7 @@
 import sinon from 'sinon';
 import { expect, test } from '@oclif/test';
 
-import * as figmaExport from '@figma-export/core';
+import * as figmaExport from '@proxy-figma-export/core';
 
 describe('components', () => {
     afterEach(() => {
@@ -15,7 +15,7 @@ describe('components', () => {
 
         test
             .stdout()
-            .command(['components', 'fzYhvQpqwhZDUImRz431Qo', '-O', '@figma-export/output-components-as-svg'])
+            .command(['components', 'fzYhvQpqwhZDUImRz431Qo', '-O', '@proxy-figma-export/output-components-as-svg'])
             .it((ctx) => {
                 expect(ctx.stdout).to.contain('Exporting fzYhvQpqwhZDUImRz431Qo with [] as [@figma-export/output-components-as-svg]');
             });
@@ -26,7 +26,7 @@ describe('components', () => {
 
         test
             .stdout()
-            .command(['components', 'fzYhvQpqwhZDUImRz431Qo', '-O', '@figma-export/output-components-as-svg'])
+            .command(['components', 'fzYhvQpqwhZDUImRz431Qo', '-O', '@proxy-figma-export/output-components-as-svg'])
             .exit(1)
             .it();
     });

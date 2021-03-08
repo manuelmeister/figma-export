@@ -1,4 +1,4 @@
-const { camelCase } = require('@figma-export/utils');
+const { camelCase } = require('@proxy-figma-export/utils');
 
 module.exports = {
 

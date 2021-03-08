@@ -4,7 +4,7 @@ module.exports = {
         ['styles', {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             outputters: [
-                require('@figma-export/output-styles-as-sass')({
+                require('@proxy-figma-export/output-styles-as-sass')({
                     output: './output'
                 })
             ]
@@ -14,7 +14,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons'],
             transformers: [
-                require('@figma-export/transform-svg-with-svgo')({
+                require('@proxy-figma-export/transform-svg-with-svgo')({
                     plugins: [
                         { removeViewBox: false },
                         { removeDimensions: true }
@@ -22,10 +22,10 @@ module.exports = {
                 })
             ],
             outputters: [
-                require('@figma-export/output-components-as-svg')({
+                require('@proxy-figma-export/output-components-as-svg')({
                     output: './output'
                 }),
-                require('@figma-export/output-components-as-es6')({
+                require('@proxy-figma-export/output-components-as-es6')({
                     output: './output'
                 })
             ]

@@ -1,4 +1,4 @@
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 import { Config } from './svgr';
 declare type Options = {
     output: string;

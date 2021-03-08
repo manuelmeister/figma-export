@@ -1,5 +1,5 @@
 import * as Figma from 'figma-js';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 declare type NodeWithChildren = FigmaExport.ComponentNode | Figma.Group | Figma.Frame | Figma.Instance | Figma.BooleanGroup;
 declare const getComponents: (children?: readonly NodeWithChildren[]) => FigmaExport.ComponentNode[];
 declare type GetPagesOptions = {

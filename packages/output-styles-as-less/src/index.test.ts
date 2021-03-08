@@ -5,7 +5,7 @@ import {
     FillStyle,
     EffectStyle,
     Style,
-} from '@figma-export/types';
+} from '@proxy-figma-export/types';
 
 // eslint-disable-next-line import/order
 import fs = require('fs');

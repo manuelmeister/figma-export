@@ -29,7 +29,7 @@ const props = {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     onlyFromPages: ['octicons-by-github'],
                     outputters: [
-                        require('@figma-export/output-components-as-svgr')({
+                        require('@proxy-figma-export/output-components-as-svgr')({
                             output: './output'
                         })
                     ]

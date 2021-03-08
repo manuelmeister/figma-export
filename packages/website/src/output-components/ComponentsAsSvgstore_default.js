@@ -27,7 +27,7 @@ const props = {
                     fileId: 'fzYhvQpqwhZDUImRz431Qo',
                     onlyFromPages: ['icons'],
                     outputters: [
-                        require('@figma-export/output-components-as-svgstore')({
+                        require('@proxy-figma-export/output-components-as-svgstore')({
                             output: './output/svgstore'
                         })
                     ]

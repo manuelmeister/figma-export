@@ -35,7 +35,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-svg')({
+                require('@proxy-figma-export/output-components-as-svg')({
                     output: './output'
                 })
             ]
@@ -53,7 +53,7 @@ const path = require('path');
 
 ...
 
-require('@figma-export/output-components-as-svg')({
+require('@proxy-figma-export/output-components-as-svg')({
     output: './output',
     getDirname: (options) => `${options.pageName}${path.sep}${options.dirname}`,
     getBasename: (options) => `${options.basename}.svg`,

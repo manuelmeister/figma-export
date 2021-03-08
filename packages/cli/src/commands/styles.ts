@@ -1,7 +1,7 @@
 import { Command, flags as commandFlags } from '@oclif/command';
 
-import * as figmaExport from '@figma-export/core';
-import * as FigmaExport from '@figma-export/types';
+import * as figmaExport from '@proxy-figma-export/core';
+import * as FigmaExport from '@proxy-figma-export/types';
 
 import { requirePackages } from '../utils';
 

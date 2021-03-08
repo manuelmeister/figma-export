@@ -2,7 +2,7 @@ import * as Figma from 'figma-js';
 
 import { basename, dirname } from 'path';
 import pLimit from 'p-limit';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 
 import {
     toArray,

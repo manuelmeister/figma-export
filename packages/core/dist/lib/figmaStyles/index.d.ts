@@ -1,5 +1,5 @@
 import * as Figma from 'figma-js';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 declare const fetchStyles: (client: Figma.ClientInterface, fileId: string) => Promise<FigmaExport.StyleNode[]>;
 declare const parseStyles: (styleNodes: FigmaExport.StyleNode[]) => FigmaExport.Style[];
 export { fetchStyles, parseStyles, };

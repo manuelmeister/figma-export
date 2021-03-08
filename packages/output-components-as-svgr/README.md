@@ -40,7 +40,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-svgr')({
+                require('@proxy-figma-export/output-components-as-svgr')({
                     output: './output'
                 })
             ]
@@ -55,11 +55,11 @@ module.exports = {
 
 ```js
 const path = require('path');
-const { pascalCase } = require('@figma-export/utils');
+const { pascalCase } = require('@proxy-figma-export/utils');
 
 ...
 
-require('@figma-export/output-components-as-svgr')({
+require('@proxy-figma-export/output-components-as-svgr')({
     output: './output',
     getDirname: (options) => `${options.pageName}${path.sep}${options.dirname}`,
     getComponentName: (options) => `${pascalCase(options.basename)}`,

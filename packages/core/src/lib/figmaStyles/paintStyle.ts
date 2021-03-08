@@ -1,5 +1,5 @@
 import * as Figma from 'figma-js';
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 
 import { notEmpty } from '../utils';
 

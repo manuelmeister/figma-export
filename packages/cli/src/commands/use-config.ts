@@ -1,6 +1,6 @@
 import { Command } from '@oclif/command';
 
-import * as figmaExport from '@figma-export/core';
+import * as figmaExport from '@proxy-figma-export/core';
 
 import fs = require('fs');
 import path = require('path');

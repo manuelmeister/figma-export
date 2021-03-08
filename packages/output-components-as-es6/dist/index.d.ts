@@ -1,4 +1,4 @@
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 declare type Options = {
     output: string;
     useBase64?: boolean;

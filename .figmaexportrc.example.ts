@@ -4,12 +4,12 @@
  *   $ npm install --save-dev @figma-export/output-styles-as-sass @figma-export/transform-svg-with-svgo @figma-export/output-components-as-svg @figma-export/output-components-as-es6
  */
 
-import { FigmaExportRC, StylesCommandOptions, ComponentsCommandOptions } from '@figma-export/types';
+import { FigmaExportRC, StylesCommandOptions, ComponentsCommandOptions } from '@proxy-figma-export/types';
 
-import outputStylesAsSass from '@figma-export/output-styles-as-sass';
-import transformSvgWithSvgo from '@figma-export/transform-svg-with-svgo';
-import outputComponentsAsSvg from '@figma-export/output-components-as-svg';
-import outputComponentsAsEs6 from '@figma-export/output-components-as-es6';
+import outputStylesAsSass from '@proxy-figma-export/output-styles-as-sass';
+import transformSvgWithSvgo from '@proxy-figma-export/transform-svg-with-svgo';
+import outputComponentsAsSvg from '@proxy-figma-export/output-components-as-svg';
+import outputComponentsAsEs6 from '@proxy-figma-export/output-components-as-es6';
 
 const styleOptions: StylesCommandOptions = {
     fileId: 'fzYhvQpqwhZDUImRz431Qo',

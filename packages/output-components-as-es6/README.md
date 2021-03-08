@@ -33,7 +33,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-es6')({
+                require('@proxy-figma-export/output-components-as-es6')({
                     output: './output'
                 })
             ]
@@ -47,11 +47,11 @@ module.exports = {
 `getVariableName`, `useBase64` and `useDataUrl` are **optional**.
 
 ```js
-const { camelCase } = require('@figma-export/utils');
+const { camelCase } = require('@proxy-figma-export/utils');
 
 ...
 
-require('@figma-export/output-components-as-es6')({
+require('@proxy-figma-export/output-components-as-es6')({
     output: './output',
     getVariableName: (options) => camelCase(options.componentName.trim()),
     useBase64: false,

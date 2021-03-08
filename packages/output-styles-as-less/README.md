@@ -23,7 +23,7 @@ module.exports = {
         ['styles', {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             outputters: [
-                require('@figma-export/output-styles-as-less')({
+                require('@proxy-figma-export/output-styles-as-less')({
                     output: './output'
                 })
             ]
@@ -37,7 +37,7 @@ module.exports = {
 `getFilename` are **optional**.
 
 ```js
-require('@figma-export/output-styles-as-less')({
+require('@proxy-figma-export/output-styles-as-less')({
     output: './output',
     getFilename: () => '_variables',
 })

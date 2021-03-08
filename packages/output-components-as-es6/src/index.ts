@@ -1,7 +1,7 @@
 import makeDir from 'make-dir';
-import { camelCase } from '@figma-export/utils';
+import { camelCase } from '@proxy-figma-export/utils';
 
-import * as FigmaExport from '@figma-export/types';
+import * as FigmaExport from '@proxy-figma-export/types';
 
 import fs = require('fs');
 import path = require('path');

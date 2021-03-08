@@ -30,7 +30,7 @@ module.exports = {
             fileId: 'fzYhvQpqwhZDUImRz431Qo',
             onlyFromPages: ['icons', 'unit-test'],
             outputters: [
-                require('@figma-export/output-components-as-svgstore')({
+                require('@proxy-figma-export/output-components-as-svgstore')({
                     output: './output'
                 })
             ]
@@ -44,7 +44,7 @@ module.exports = {
 `getIconId` and `svgstoreConfig` are **optional**.
 
 ```js
-require('@figma-export/output-components-as-svgstore')({
+require('@proxy-figma-export/output-components-as-svgstore')({
     output: './output',
     getIconId: (options) => `${options.pageName}/${options.componentName}`,
     svgstoreConfig: {},
