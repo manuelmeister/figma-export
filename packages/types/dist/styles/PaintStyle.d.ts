@@ -1,4 +1,4 @@
-import * as Figma from 'figma-js';
+import * as Figma from 'proxy-figma-js';
 /** Minimum necessary information for extracting a color */
 export declare type ExtractableColor = {
     color?: Figma.Color;

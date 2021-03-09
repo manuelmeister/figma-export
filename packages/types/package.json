@@ -27,6 +27,6 @@
         "node": ">= 10.13 <= 14.x"
     },
     "dependencies": {
-        "figma-js": "manuelmeister/figma-js"
+        "proxy-figma-js": "^1.13.3"
     }
 }

@@ -1,4 +1,4 @@
-import * as Figma from 'figma-js';
+import * as Figma from 'proxy-figma-js';
 export declare type ComponentExtras = {
     dirname: string;
     basename: string;

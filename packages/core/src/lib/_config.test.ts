@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as FigmaExport from '@proxy-figma-export/types';
-import * as Figma from 'figma-js';
+import * as Figma from 'proxy-figma-js';
 
 const svg = {
     domain: 'https://s3-us-west-2.amazonaws.com',

@@ -26,7 +26,7 @@
         "@proxy-figma-export/types": "^3.2.3",
         "axios": "^0.21.1",
         "https-proxy-agent": "^5.0.0",
-        "figma-js": "manuelmeister/figma-js",
+        "proxy-figma-js": "^1.13.3",
         "p-limit": "^3.0.2"
     },
     "engines": {

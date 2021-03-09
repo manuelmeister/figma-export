@@ -1,5 +1,5 @@
 {
-  "name": "figma-export",
+  "name": "proxy-figma-export",
   "private": true,
   "license": "MIT",
   "description": "Export tool for Figma",

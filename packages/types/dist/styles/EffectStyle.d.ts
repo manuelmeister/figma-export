@@ -1,4 +1,4 @@
-import * as Figma from 'figma-js';
+import * as Figma from 'proxy-figma-js';
 import { Color } from './PaintStyle';
 export declare type EffectStyleShadow = {
     type: 'DROP_SHADOW' | 'INNER_SHADOW';

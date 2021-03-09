@@ -1,5 +1,5 @@
 import axios, {AxiosRequestConfig} from 'axios';
-import * as Figma from 'figma-js';
+import * as Figma from 'proxy-figma-js';
 import { writeFileSync } from 'fs';
 import { sep } from 'path';
 const HttpsProxyAgent = require("https-proxy-agent");
