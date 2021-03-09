@@ -1,6 +1,6 @@
 {
     "name": "@proxy-figma-export/core",
-    "version": "3.2.3",
+    "version": "3.2.4",
     "description": "@figma-export core functionalities",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -23,11 +23,11 @@
         "access": "public"
     },
     "dependencies": {
-        "@proxy-figma-export/types": "^3.2.3",
+        "@proxy-figma-export/types": "^3.2.4",
         "axios": "^0.21.1",
         "https-proxy-agent": "^5.0.0",
-        "proxy-figma-js": "^1.13.3",
-        "p-limit": "^3.0.2"
+        "p-limit": "^3.0.2",
+        "proxy-figma-js": "^1.13.3"
     },
     "engines": {
         "node": ">= 10.13 <= 14.x"
