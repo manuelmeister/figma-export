@@ -82,8 +82,8 @@ const fileImages = async (client: Figma.ClientInterface, fileId: string, ids: st
 };
 
 const getImages = async (client: Figma.ClientInterface, fileId: string, ids: string[]): Promise<{readonly [key: string]: string}> => {
-    const idss = chunk(ids, 200);
-    const limit = pLimit(30);
+    const idss = chunk(ids, 100);
+    const limit = pLimit(10);
 
     const resolves = await Promise.all(idss.map((groupIds) => {
         return limit(() => fileImages(client, fileId, groupIds));
