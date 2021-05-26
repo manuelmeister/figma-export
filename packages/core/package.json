@@ -1,6 +1,6 @@
 {
     "name": "@figma-export/core",
-    "version": "3.2.4",
+    "version": "3.2.5",
     "description": "@figma-export core functionalities",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
