@@ -1,6 +1,6 @@
 {
     "name": "@proxy-figma-export/transform-svg-with-svgo",
-    "version": "3.2.7",
+    "version": "3.2.8",
     "description": "Transformer for @figma-export that optimizes svgs using svgo tool",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
