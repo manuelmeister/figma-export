@@ -49,8 +49,12 @@ export const fetchAsSvgXml = (url: string): Promise<string> => {
 
     return axios.get(url, config).then((response) => {
         return response.data;
-    }).catch((error: Error) => {
-        throw new Error(`while fetching svg "${url}": ${error.message}`);
+    }).catch(() => {
+        return axios.get(url, config).then((response) => {
+            return response.data;
+        }).catch((error: Error) => {
+            throw new Error(`while fetching svg "${url}": ${error.message}`);
+        });
     });
 };
 

@@ -74,8 +74,14 @@ const fileImages = async (client: Figma.ClientInterface, fileId: string, ids: st
         ids,
         format: 'svg',
         svg_include_id: true,
-    }).catch((error: Error) => {
-        throw new Error(`while fetching fileImages: ${error.message}`);
+    }).catch(() => {
+        return client.fileImages(fileId, {
+            ids,
+            format: 'svg',
+            svg_include_id: true,
+        }).catch((error: Error) => {
+            throw new Error(`while fetching fileImages: ${error.message}`);
+        });
     });
 
     return response.data.images;
@@ -83,7 +89,7 @@ const fileImages = async (client: Figma.ClientInterface, fileId: string, ids: st
 
 const getImages = async (client: Figma.ClientInterface, fileId: string, ids: string[]): Promise<{readonly [key: string]: string}> => {
     const idss = chunk(ids, 100);
-    const limit = pLimit(10);
+    const limit = pLimit(5);
 
     const resolves = await Promise.all(idss.map((groupIds) => {
         return limit(() => fileImages(client, fileId, groupIds));
@@ -107,7 +113,7 @@ const fileSvgs = async (
     fileId: string,
     ids: string[],
     {
-        concurrency = 30,
+        concurrency = 5,
         transformers = [],
         // eslint-disable-next-line @typescript-eslint/no-empty-function
         onFetchCompleted = () => {},
