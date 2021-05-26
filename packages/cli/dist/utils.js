@@ -8,7 +8,7 @@ const resolveNameOrPath = (nameOrPath) => {
     return fs.existsSync(absolutePath) ? absolutePath : nameOrPath;
 };
 // eslint-disable-next-line @typescript-eslint/ban-types
-exports.requirePackages = (packages, baseOptions = {}) => {
+const requirePackages = (packages, baseOptions = {}) => {
     return packages.map((pkg) => {
         if (typeof pkg === 'function') {
             return pkg;
@@ -18,4 +18,5 @@ exports.requirePackages = (packages, baseOptions = {}) => {
         return require(pkgNameOrPath)(baseOptions);
     });
 };
+exports.requirePackages = requirePackages;
 //# sourceMappingURL=utils.js.map
