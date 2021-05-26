@@ -62,5 +62,5 @@
     "prepack": "oclif-dev manifest && oclif-dev readme",
     "version": "oclif-dev readme && git add README.md"
   },
-  "gitHead": "b139a4feae8df2fb5343cb209a98110d4d67a041"
+  "gitHead": "3a5517b9cde228aa2b4fe61c2aa61b82a13d4c3d"
 }

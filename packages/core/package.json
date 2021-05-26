@@ -1,5 +1,5 @@
 {
-    "name": "@figma-export/core",
+    "name": "@proxy-figma-export/core",
     "version": "3.2.6",
     "description": "@figma-export core functionalities",
     "main": "dist/index.js",
@@ -32,5 +32,5 @@
     "engines": {
         "node": ">= 10.13 <= 14.x"
     },
-    "gitHead": "b139a4feae8df2fb5343cb209a98110d4d67a041"
+    "gitHead": "3a5517b9cde228aa2b4fe61c2aa61b82a13d4c3d"
 }

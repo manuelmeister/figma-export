@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@figma-export/website",
+    "name": "@proxy-figma-export/website",
     "version": "3.2.6",
     "description": "Website for @figma-export",
     "author": "Marco Montalbano",
