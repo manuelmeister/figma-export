@@ -1,7 +1,7 @@
 {
   "name": "@proxy-figma-export/cli",
   "description": "Command line for @figma-export",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Marco Montalbano",
